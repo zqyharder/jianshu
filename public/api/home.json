@@ -1,0 +1,40 @@
+
+{   "success":true,
+    "data":{
+        "topicList":[{
+            "id":1,
+            "title":"社会热点"
+        },{
+            "id":2,
+            "title":"手绘"
+        }],
+        "articleList":[{
+            "id":1,
+            "title":"朱元璋小时玩伴多嘴丧命",
+            "desc":"朱元璋当了皇帝后，一天，他的一个儿时伙伴来求见。 朱元璋很高兴，也想见这位老朋友，但又担心他讲出一些让自己下不了台的话出来，于是有些犹豫，但又怕...",
+            "imgUrl":"//upload-images.jianshu.io/upload_images/9536780-819f530c50e1c286.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+        },{
+            "id":2,
+            "title":"朱元璋小时玩伴多嘴丧命",
+            "desc":"朱元璋当了皇帝后，一天，他的一个儿时伙伴来求见。 朱元璋很高兴，也想见这位老朋友，但又担心他讲出一些让自己下不了台的话出来，于是有些犹豫，但又怕...",
+            "imgUrl":"//upload-images.jianshu.io/upload_images/9536780-819f530c50e1c286.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+        },{
+            "id":3,
+            "title":"朱元璋小时玩伴多嘴丧命",
+            "desc":"朱元璋当了皇帝后，一天，他的一个儿时伙伴来求见。 朱元璋很高兴，也想见这位老朋友，但又担心他讲出一些让自己下不了台的话出来，于是有些犹豫，但又怕...",
+            "imgUrl":"//upload-images.jianshu.io/upload_images/9536780-819f530c50e1c286.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+        },{
+            "id":4,
+            "title":"朱元璋小时玩伴多嘴丧命",
+            "desc":"朱元璋当了皇帝后，一天，他的一个儿时伙伴来求见。 朱元璋很高兴，也想见这位老朋友，但又担心他讲出一些让自己下不了台的话出来，于是有些犹豫，但又怕...",
+            "imgUrl":"//upload-images.jianshu.io/upload_images/9536780-819f530c50e1c286.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+        }],
+        "recommendList":[{
+            "id":1,
+            "url":"http://cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png"
+        },{
+            "id":2,
+            "url":"http://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"
+        }]
+    }
+}
