@@ -21,6 +21,7 @@ export const Nav=styled.div`
     width:960px;
     padding-right:70px;
     box-sizing:border-box;
+    ${'' /* 边框和内边距都包含在width里 */}
     height:100%;
     margin:0 auto;
 `;
@@ -28,7 +29,7 @@ export const NavItem=styled.div`
     line-height:56px;
     padding:0 15px;
     font-size:17px;
-    cocor:#333;
+    color:#333;
 
     &.left{
         float:left;
@@ -52,6 +53,7 @@ export const SearchWrapper=styled.div`
         width:30px;
         line-height:30px;
         border-radius:15px;
+        ${'' /* 增加一个圆背景 */}
         text-align:center;
         &.focused{
             background:#777;

@@ -26,10 +26,10 @@ const mapState = (state)=>({
     title:state.getIn(["detail","title"]),
     content:state.getIn(["detail","content"])
 });
-const mapDespatch=(dispatch)=>({
+const mapDispatch=(dispatch)=>({
     changeDetailData(id){
         dispatch(actionCreators.getDetailData(id));
     }
 });
-export default connect(mapState,mapDespatch)(withRouter(Detail));
+export default connect(mapState,mapDispatch)(withRouter(Detail));
 

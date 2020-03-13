@@ -10,7 +10,7 @@ class Recommend extends PureComponent{
                 list.map((item)=>{
                     return(
                 <RecommendItem imgUrl={item.get("url")} key={item.get("id")}/>
-
+                //imgTrl为传入的参数，在style.js里可以用background:url(${(props)=>props.imgUrl} )获取
                     )
                 })
             }

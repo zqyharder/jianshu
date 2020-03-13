@@ -31,7 +31,6 @@ const mapState=(state)=>({
 const mapDespatch=(dispatch)=>({
     login(accountElem,passwordElem){
         dispatch(actionCreators.login(accountElem,passwordElem))
-        
     }
 })
 export default connect(mapState,mapDespatch)(Login);

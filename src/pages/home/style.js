@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const HomeWrapper = styled.div`
     overflow:hidden;
+    ${'' /* 触发BFC，如此可以感受到里面浮动元素的高度 */}
     width:960px;
     margin:0 auto;
 `;
@@ -83,6 +84,7 @@ export const WriterWrapper = styled.div`
     margin: 0 0 20px;
     text-align: left;
     border:1px solid #dcdcdc;
+    border-radius:3px;
     height:300px;
 `;
 export const WriterItem = styled.div`

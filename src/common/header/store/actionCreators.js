@@ -32,7 +32,8 @@ export const getList=()=>{
         axios.get("/api/headerList.json").then((res)=>{
             const data=res.data;
             dispatch(changeList(data.data));
-            //两层data的原因：从json中读到的文件中，假数据在data里
+            //changeList用于将axios获取的数据写入state中的list
+            //两层data的原因：从json中读到的文件中，有success和data，假数据在data里
         }).catch(()=>{
             console.log("error");
         })

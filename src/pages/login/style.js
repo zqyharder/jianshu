@@ -2,6 +2,7 @@ import styled from "styled-components";
  
 export const LoginWrapper=styled.div`
     z-index:-99;
+    ${'' /* 为了显示搜索栏 */}
     position:absolute;
     left:0;
     right:0;

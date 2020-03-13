@@ -31,6 +31,7 @@ class Header extends Component{
         const newList=list.toJS();
         const pageList=[];
         if(newList.length){
+            //判断的原因：刚进入页面时还未通过聚焦搜索框获取List值,会使得下面的key值都为undefined
             for(let i=(page-1)*10;i<page*10&&i<newList.length;i++){
                 pageList.push(
                     <SearchInfoItem key={newList[i]}>{newList[i]}</SearchInfoItem>
@@ -39,6 +40,8 @@ class Header extends Component{
         }
         
         if(focused || mouseIn){
+            //focused：输入框聚焦显示否则反之；
+            //mouseIn：鼠标移入热门框显示否则反之，这样使得点击换一批时输入框失焦也能显示热门框
             return(
                 <SearchInfo 
                 onMouseEnter={handleMouseEnter}
@@ -51,7 +54,8 @@ class Header extends Component{
                         onClick={()=>handleChangePage(page,totalPage,this.spinIcon)}
                         >
                             <span ref={(icon)=>{this.spinIcon=icon}} className="iconfont spin">&#xe68f;</span>
-                            换一批</SearchInfoSwitch>
+                            换一批
+                        </SearchInfoSwitch>
                     </SearchInfoTitle>
                     <SearchInfoList>
                         {pageList}
@@ -136,7 +140,7 @@ const mapStateToProps=(state) =>{
 const mapDispathToProps=(dispatch) =>{
     return{
         handleInputFocus(list){
-            (list.size===0)&&dispatch(actionCreators.getList());//派发action
+            (list.size===0)&&dispatch(actionCreators.getList());//返回函数redux
             dispatch(actionCreators.searchFocus());
         },
         handleInputBlur(){
